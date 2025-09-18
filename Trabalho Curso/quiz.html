@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Quiz</h1>
+  <nav class="menu">
+    <button onclick="window.location.href='index.html'">O que é</button>
+    <button onclick="window.location.href='aprendi.html'">O que eu aprendi</button>
+    <button onclick="window.location.href='quiz.html'">Quiz</button>
+  </nav>
+</header>
+
+<main>
+  <h2>Perguntas</h2>
+  <form action="salvar_quiz.php" method="post" onsubmit="return confirmarEnvio()">
+    <p>Vai continuar na profissão?<br>
+      <input type="radio" name="continuar" value="Sim"> Sim
+      <input type="radio" name="continuar" value="Não"> Não
+    </p>
+
+    <p>Vai fazer faculdade?<br>
+      <input type="radio" name="faculdade" value="Sim"> Sim
+      <input type="radio" name="faculdade" value="Não"> Não
+    </p>
+
+    <p>Estou formando, vou fazer curso.<br>
+      <input type="radio" name="curso" value="Sim"> Sim
+      <input type="radio" name="curso" value="Não"> Não
+    </p>
+
+    <p>Vai parar o curso?<br>
+      <input type="radio" name="parar" value="Sim"> Sim
+      <input type="radio" name="parar" value="Não"> Não
+    </p>
+
+    
+    <h3>Quem foi o melhor?</h3>
+      <label><input type="radio" name="melhor" value="Clevinton"> Clevinton</label><br>
+      <label><input type="radio" name="melhor" value="Allison"> Allison</label><br>
+      <label><input type="radio" name="melhor" value="Monica / Jesus"> Monica / Jesus</label><br>
+      <label><input type="radio" name="melhor" value="Alexandre"> Alexandre</label><br>
+      <label><input type="radio" name="melhor" value="Jesus"> Jesus</label><br>
+    <br>
+    <button type="submit">Enviar Respostas</button>
+    <button type="reset">Limpar Formulário</button>
+  </form>
+</main>
+
+
+<footer>
+  <p>✅ Boa sorte no quiz! Revise suas respostas antes de enviar.</p>
+</footer>
+</body>
+</html>
